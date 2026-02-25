@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>{% block title %}Sonora{% block title %}</title>
+	<title>{% block title %}Sonora{% endblock %}</title>
 
 	<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
 </head>
@@ -13,14 +13,19 @@
 	<header>
 		<nav>
 			<h2>Sonora</h2>
-			<a href="{{ url_for('main.index') }}">Home</a>
-			<a href="#">Dashboard</a>
-			<a href="#">Login</a>
+			<a href="{{ url_for('home_page') }}">Home</a>
+			<a href="{{ url_for('dashboard') }}">Dashboard</a>
+			<div class = "login-btn">
+				<a href="#">Login</a>
+			</div>
 		</nav>
 	</header>
 
 	<main>
 		{% block content %}
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore enim atque earum totam qui, tempora illum? Hic, harum totam? Quo voluptas porro quibusdam eos iste fugit magnam impedit nulla natus!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere!</p>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem porro accusamus repudiandae pariatur magni. Cupiditate, ullam sapiente amet illo eos velit, nulla placeat, voluptas tempora in iusto laboriosam dicta ut.</p>
 		{% endblock %}
 	</main>
 
