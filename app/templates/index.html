@@ -4,10 +4,17 @@
 Home Page
 {% endblock %}
 
+
+
 {%block content%}
+    <div class = "hero-image">
+        <div class = "hero-text">
+        <h1>Welcome, Runner</h1>
+        </div>
+    </div>
     <img src="{{url_for('static',filename='images/IMG_4072.webp')}}">
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore enim atque earum totam qui, tempora illum? Hic, harum totam? Quo voluptas porro quibusdam eos iste fugit magnam impedit nulla natus!</p>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, facere!</p>
 	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem porro accusamus repudiandae pariatur magni. Cupiditate, ullam sapiente amet illo eos velit, nulla placeat, voluptas tempora in iusto laboriosam dicta ut.</p>
-    
+    <img class="night-shot" src="{{url_for('static',filename='images/546415846_1200985442074838_5666676279838363079_n.jpg')}}">
 {%endblock%}

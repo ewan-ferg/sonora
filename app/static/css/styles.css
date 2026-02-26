@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body{
+html, body{
     background-color: #FFFF;
+    height:100%;
 }
 h2{
     font-family: "Space Mono";
@@ -41,6 +42,8 @@ nav a:hover{
     transform: scale(1.1);
 }
 
+
+
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
@@ -54,4 +57,27 @@ img{
     margin: 0 20px 15px 0;
     border: none;
     border-radius: 12px;
+}
+
+.night-shot{
+width: 400px;
+height: 400px;
+float:right;
+border:1rem;
+}
+
+.hero-image{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/1_pa00sNF9ikKA_lyKmfctmA.jpg");
+height: 70vh;
+background-position:center;
+background-repeat:no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text{
+font-size:larger;
+font-family:'Impact';
+color:white;
+
 }
